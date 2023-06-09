@@ -31,20 +31,20 @@ namespace pryControlesComunesVariables
             //validar que el usuario sea admin - admin
             if (vUsuario == "admin" && vContraseña == "admin")
             {
+
                 //muestra la ventana principal
                 frmPrincipal ventanaPrincipal = new frmPrincipal();
                 ventanaPrincipal.ShowDialog();
 
                 //oculta la ventana actual
                 this.Hide();
-
-                else
-                {
-                    
-                    MessageBox.Show("Dato Incorrecto", "Login.Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);)
-                }
-
             }
+            else
+            {
+
+                MessageBox.Show("Dato Incorrecto", "Login.Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+            }            
         }
     }
 }
