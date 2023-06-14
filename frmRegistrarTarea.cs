@@ -16,5 +16,14 @@ namespace pryControlesComunesVariables
         {
             InitializeComponent();
         }
+
+        private void frmRegistrarTarea_Load(object sender, EventArgs e)
+        {
+            //cboTareas.Items.Add("Tarea 1");
+            //cboTareas.Items.Add("Tarea 2");
+            //cboTareas.Items.Add("Tarea 3");
+            //cboTareas.Items.Add("Tarea 4");
+            //cboTareas.Items.Add("Tarea 5");
+        }
     } 
 }

@@ -16,7 +16,7 @@ namespace pryControlesComunesVariables
 
         string vUsuario;
         string vContraseña;
-
+        int vContadorLogin = 0;
         public frmInicioDeSesion()
         {
             InitializeComponent();
@@ -41,9 +41,16 @@ namespace pryControlesComunesVariables
             }
             else
             {
-
-                MessageBox.Show("Dato Incorrecto", "Login.Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-
+                vContadorLogin++;// contar la cantidad de fallas
+                if (vContadorLogin ==3)
+                {
+                    MessageBox.Show("Demasiados Intentos fallidos", "Adió Hacker", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Close();
+                }
+                else
+                {
+                    MessageBox.Show("Dato Incorrecto. Intento: " + vContadorLogin.ToString() + " de 3 ", "Login.Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
             }            
         }
     }

@@ -17,9 +17,10 @@ namespace pryControlesComunesVariables
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void btnRegistrar_Click(object sender, EventArgs e)
         {
-
+            frmRegistrarTarea frmRegistrarTarea = new frmRegistrarTarea();
+            frmRegistrarTarea.ShowDialog();
         }
     }
 }
