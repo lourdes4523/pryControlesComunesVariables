@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.btnListar = new System.Windows.Forms.Button();
+            this.btnRegistroMatriz = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnRegistrar
@@ -56,11 +57,23 @@
             this.btnListar.Text = "Listar-Consultar";
             this.btnListar.UseVisualStyleBackColor = true;
             // 
+            // btnRegistroMatriz
+            // 
+            this.btnRegistroMatriz.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnRegistroMatriz.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistroMatriz.Location = new System.Drawing.Point(153, 325);
+            this.btnRegistroMatriz.Name = "btnRegistroMatriz";
+            this.btnRegistroMatriz.Size = new System.Drawing.Size(308, 66);
+            this.btnRegistroMatriz.TabIndex = 2;
+            this.btnRegistroMatriz.Text = "Registro en Matriz";
+            this.btnRegistroMatriz.UseVisualStyleBackColor = true;
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnRegistroMatriz);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.btnRegistrar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -75,6 +88,7 @@
 
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Button btnListar;
+        private System.Windows.Forms.Button btnRegistroMatriz;
     }
 }
 

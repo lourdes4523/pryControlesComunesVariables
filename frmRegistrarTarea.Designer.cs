@@ -44,7 +44,7 @@
             this.txtDetalle = new System.Windows.Forms.TextBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGrabar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCargarVector = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.cmdVerVector = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -214,15 +214,15 @@
             this.btnGrabar.UseVisualStyleBackColor = true;
             this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
-            // button1
+            // btnCargarVector
             // 
-            this.button1.Location = new System.Drawing.Point(351, 24);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(179, 38);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Cargar Vector";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.btnCargarVector_Click);
+            this.btnCargarVector.Location = new System.Drawing.Point(351, 24);
+            this.btnCargarVector.Name = "btnCargarVector";
+            this.btnCargarVector.Size = new System.Drawing.Size(179, 38);
+            this.btnCargarVector.TabIndex = 13;
+            this.btnCargarVector.Text = "Cargar Vector";
+            this.btnCargarVector.UseVisualStyleBackColor = true;
+            this.btnCargarVector.Click += new System.EventHandler(this.btnCargarVector_Click);
             // 
             // listBox1
             // 
@@ -271,7 +271,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.cmdVerVector);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCargarVector);
             this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.txtDetalle);
@@ -312,7 +312,7 @@
         private System.Windows.Forms.Button btnGrabar;
         private System.Windows.Forms.TextBox txtDetalle;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCargarVector;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button cmdVerVector;
         private System.Windows.Forms.Button button2;
