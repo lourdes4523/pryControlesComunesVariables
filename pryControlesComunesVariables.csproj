@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmMostrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMostrar.Designer.cs">
+      <DependentUpon>frmMostrar.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRegistrarTarea.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmMostrar.resx">
+      <DependentUpon>frmMostrar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmInicioDeSesion.resx">
       <DependentUpon>frmInicioDeSesion.cs</DependentUpon>
     </EmbeddedResource>

@@ -49,6 +49,7 @@
             this.cmdVerVector = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.btnMostar = new System.Windows.Forms.Button();
             this.gbReunion.SuspendLayout();
             this.gbTareas.SuspendLayout();
             this.SuspendLayout();
@@ -66,7 +67,7 @@
             // 
             this.dtpFecha.Location = new System.Drawing.Point(35, 42);
             this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(219, 20);
+            this.dtpFecha.Size = new System.Drawing.Size(236, 20);
             this.dtpFecha.TabIndex = 1;
             // 
             // lblTipoActividad
@@ -90,13 +91,13 @@
             "tarea 15"});
             this.cboTipoActividad.Location = new System.Drawing.Point(34, 119);
             this.cboTipoActividad.Name = "cboTipoActividad";
-            this.cboTipoActividad.Size = new System.Drawing.Size(219, 21);
+            this.cboTipoActividad.Size = new System.Drawing.Size(237, 21);
             this.cboTipoActividad.TabIndex = 3;
             // 
             // lblDetalle
             // 
             this.lblDetalle.AutoSize = true;
-            this.lblDetalle.Location = new System.Drawing.Point(31, 171);
+            this.lblDetalle.Location = new System.Drawing.Point(37, 183);
             this.lblDetalle.Name = "lblDetalle";
             this.lblDetalle.Size = new System.Drawing.Size(40, 13);
             this.lblDetalle.TabIndex = 4;
@@ -108,7 +109,7 @@
             this.gbReunion.Controls.Add(this.optSi);
             this.gbReunion.Location = new System.Drawing.Point(34, 298);
             this.gbReunion.Name = "gbReunion";
-            this.gbReunion.Size = new System.Drawing.Size(219, 76);
+            this.gbReunion.Size = new System.Drawing.Size(237, 76);
             this.gbReunion.TabIndex = 6;
             this.gbReunion.TabStop = false;
             this.gbReunion.Text = "Reunion";
@@ -143,7 +144,7 @@
             this.gbTareas.Controls.Add(this.chkRepositorio);
             this.gbTareas.Location = new System.Drawing.Point(34, 393);
             this.gbTareas.Name = "gbTareas";
-            this.gbTareas.Size = new System.Drawing.Size(219, 90);
+            this.gbTareas.Size = new System.Drawing.Size(237, 90);
             this.gbTareas.TabIndex = 7;
             this.gbTareas.TabStop = false;
             this.gbTareas.Text = "Tareas";
@@ -192,12 +193,12 @@
             this.txtDetalle.Location = new System.Drawing.Point(35, 199);
             this.txtDetalle.Multiline = true;
             this.txtDetalle.Name = "txtDetalle";
-            this.txtDetalle.Size = new System.Drawing.Size(218, 86);
+            this.txtDetalle.Size = new System.Drawing.Size(236, 86);
             this.txtDetalle.TabIndex = 10;
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(66, 488);
+            this.btnCancelar.Location = new System.Drawing.Point(115, 489);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 11;
@@ -206,7 +207,7 @@
             // 
             // btnGrabar
             // 
-            this.btnGrabar.Location = new System.Drawing.Point(167, 488);
+            this.btnGrabar.Location = new System.Drawing.Point(196, 489);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(75, 23);
             this.btnGrabar.TabIndex = 12;
@@ -262,11 +263,21 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.btnVerVector3_Click);
             // 
+            // btnMostar
+            // 
+            this.btnMostar.Location = new System.Drawing.Point(34, 488);
+            this.btnMostar.Name = "btnMostar";
+            this.btnMostar.Size = new System.Drawing.Size(75, 23);
+            this.btnMostar.TabIndex = 18;
+            this.btnMostar.Text = "Mostar";
+            this.btnMostar.UseVisualStyleBackColor = true;
+            // 
             // frmRegistrarTarea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(552, 523);
+            this.Controls.Add(this.btnMostar);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.cmdVerVector);
@@ -317,5 +328,6 @@
         private System.Windows.Forms.Button cmdVerVector;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnMostar;
     }
 }
