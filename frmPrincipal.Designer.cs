@@ -31,14 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.btnListar = new System.Windows.Forms.Button();
-            this.btnRegistroMatriz = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnRegistrar
             // 
             this.btnRegistrar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.Location = new System.Drawing.Point(153, 144);
+            this.btnRegistrar.Font = new System.Drawing.Font("Corbel", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrar.Location = new System.Drawing.Point(153, 117);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(308, 66);
             this.btnRegistrar.TabIndex = 0;
@@ -49,37 +48,28 @@
             // btnListar
             // 
             this.btnListar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnListar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListar.Location = new System.Drawing.Point(153, 229);
+            this.btnListar.Font = new System.Drawing.Font("Corbel", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListar.Location = new System.Drawing.Point(153, 218);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(308, 66);
             this.btnListar.TabIndex = 1;
             this.btnListar.Text = "Listar-Consultar";
             this.btnListar.UseVisualStyleBackColor = true;
-            // 
-            // btnRegistroMatriz
-            // 
-            this.btnRegistroMatriz.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnRegistroMatriz.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistroMatriz.Location = new System.Drawing.Point(153, 325);
-            this.btnRegistroMatriz.Name = "btnRegistroMatriz";
-            this.btnRegistroMatriz.Size = new System.Drawing.Size(308, 66);
-            this.btnRegistroMatriz.TabIndex = 2;
-            this.btnRegistroMatriz.Text = "Registro en Matriz";
-            this.btnRegistroMatriz.UseVisualStyleBackColor = true;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnRegistroMatriz);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.btnRegistrar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmPrincipal";
             this.Text = "Gestion de Tareas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.ResumeLayout(false);
 
         }
@@ -88,7 +78,6 @@
 
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Button btnListar;
-        private System.Windows.Forms.Button btnRegistroMatriz;
     }
 }
 

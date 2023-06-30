@@ -53,5 +53,10 @@ namespace pryControlesComunesVariables
                 }
             }            
         }
+
+        private void frmInicioDeSesion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

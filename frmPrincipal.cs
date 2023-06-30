@@ -12,6 +12,8 @@ namespace pryControlesComunesVariables
 {
     public partial class frmPrincipal : Form
     {
+        public object Mostrar { get; private set; }
+
         public frmPrincipal()
         {
             InitializeComponent();
@@ -19,8 +21,21 @@ namespace pryControlesComunesVariables
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            frmRegistrarTarea frmRegistrarTarea = new frmRegistrarTarea();
+            frmRegistrar frmRegistrarTarea = new frmRegistrar();
             frmRegistrarTarea.ShowDialog();
         }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            frmMostrar frmMostrar = new frmMostrar();
+            frmMostrar.ShowDialog();
+        }
+
+        
     }
 }

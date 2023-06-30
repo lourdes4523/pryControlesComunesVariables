@@ -16,7 +16,7 @@ namespace pryControlesComunesVariables
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmRegistroMatriz());
+            Application.Run(new frmInicioDeSesion());
         }
     }
 }

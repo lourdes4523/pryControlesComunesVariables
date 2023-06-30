@@ -50,17 +50,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmRegistrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrar.Designer.cs">
+      <DependentUpon>frmRegistrar.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMostrar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMostrar.Designer.cs">
       <DependentUpon>frmMostrar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmRegistrarTarea.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmRegistrarTarea.Designer.cs">
-      <DependentUpon>frmRegistrarTarea.cs</DependentUpon>
     </Compile>
     <Compile Include="frmInicioDeSesion.cs">
       <SubType>Form</SubType>
@@ -74,14 +74,11 @@
     <Compile Include="frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmRegistroMatriz.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmRegistroMatriz.Designer.cs">
-      <DependentUpon>frmRegistroMatriz.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmRegistrar.resx">
+      <DependentUpon>frmRegistrar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMostrar.resx">
       <DependentUpon>frmMostrar.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,12 +87,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmRegistrarTarea.resx">
-      <DependentUpon>frmRegistrarTarea.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmRegistroMatriz.resx">
-      <DependentUpon>frmRegistroMatriz.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
